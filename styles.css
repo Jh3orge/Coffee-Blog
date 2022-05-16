@@ -454,3 +454,9 @@ header .nav-link a{
   font-size: 0.7rem;
   text-align: end;
 }
+
+.featured-post .featured-post-content .featured-badge a:hover,
+.featured-post .featured-post-content h3:hover{
+  color: rgb(185, 137, 34);
+  transition: all .3s ease;
+}
