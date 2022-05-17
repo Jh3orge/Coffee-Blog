@@ -567,6 +567,24 @@ header .nav-link a{
   text-align: end;
 }
 
+.latest-post-content button{
+  display: inline;
+  background-color: transparent;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 3px;
+  width: 50%;
+  height: 100%;
+}
+
+.latest-post-content .post-btn a{
+  color: #000;
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
 .latest-posts .latest-content .latest-post img:hover{
   filter: none;
   transition: all .5s linear;
@@ -581,3 +599,92 @@ header .nav-link a{
   color: #000;
   transition: all .3s ease;
 }
+
+.latest-post-content .post-btn:hover{
+  background-color: #000;
+  transition: all .3s ease;
+}
+
+.latest-post-content .post-btn a:hover{
+  color: #fff;
+  transition: all .3s ease;
+}
+
+
+/*---------------------------------------------  FOOTER  ------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------- */
+
+footer {
+  background-color: rgba(5, 14, 13, 0.5);
+  margin-top: 100px;
+}
+
+
+footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+
+.footer-content .social-media{
+  text-align: center;
+  margin: auto;
+  list-style-type: none;
+  padding: 50px;
+}
+
+
+
+.footer-content .social-link {
+  padding: 0px 20px;
+  display: inline-block; 
+}
+
+.footer-content .social-link a{
+font-size: 18px;
+font-weight: 200;
+color: #ffffff;
+border-radius: 50%;
+border: 1px solid #fff;
+padding: 15px;
+}
+
+footer .footer-logo {
+  padding: 30px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  text-align: center;
+}
+
+footer .copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  width: 100%;
+}
+.footer-content .social-link a:hover{
+  background-color: #fff;
+  color: #000;
+  transition: all .3s ease;
+}
+
+footer .footer-logo a:hover{
+  opacity: 0.8;
+  transition: all .3s ease;
+}
+
+.footer-content .signature a:hover{
+  color: rgb(185, 137, 34);
+  transition: all .3s ease;
+}
+
+
+
