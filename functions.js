@@ -30,3 +30,12 @@ rightAngle.addEventListener("click", () => {
         activeIndicator.classList.remove("active");
     };
 });
+
+
+//////////////////////////////////////RESPONSIVE MENU /////////////////////////////
+const navToggle = document.querySelector(".toggle");
+const navMenu = document.querySelector(".nav-items");
+
+navToggle.addEventListener ("click", () => {
+    navMenu.classList.toggle("nav-items_visible");
+});

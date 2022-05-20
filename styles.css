@@ -52,6 +52,10 @@ header {
     padding: 20px;
 }
 
+.navbar-logo{
+  display: none;
+}
+
 
 
 header .nav-items {
@@ -72,6 +76,18 @@ header .nav-link a{
   font-weight: 600;
   color: rgb(243, 243, 244);
   letter-spacing: 0.1rem;
+}
+
+.navbar .toggle {
+  color: rgb(243, 243, 244);
+  background: none;
+  border: none;
+  font-size: 25px;
+  float: right;
+  line-height: 100px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
 }
 
 /*****************************************NAVBAR HOVER******************************************/
@@ -716,3 +732,129 @@ footer .footer-logo a:hover{
 
 
 
+
+
+
+
+
+
+
+
+/*****************************************************MEDIA QUERIES ************************************************/
+@media screen and (max-width: 768px) {
+  
+  header {
+    height: auto;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    color: rgb(20, 17, 15);
+  }
+  
+
+
+  header .nav-items {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-right: 20px;
+   background-color: rgba(20, 17, 15, 0.7);
+   position: fixed;
+   left: 0;
+   top: 140px;
+   width: 100%;
+   padding: 20px 0;
+   height: calc(100% - 100px);
+   left: 100%;
+   transition: left 0.5s;
+
+  }
+
+  header .nav-link{
+    line-height: 60px;
+  }
+
+  header .social-media{
+    display: none;
+  }
+
+  .navbar .toggle{
+    display: block;
+  }
+
+  header .nav-items_visible {
+    left: 0;
+  }
+
+
+  .navbar-logo{
+    position: relative;
+    top: 0;
+    display: block;
+    width: 25%;
+    height: auto;
+    opacity: 0.7;
+  }
+
+  .banner-container{
+    position: relative;
+    top: 140px;
+  }
+
+
+  .banner-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 800px; /* Assign a value */
+    height: 500px; /* Assign a value */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+ 
+
+  .carousel{
+    display: none;
+  }
+
+
+
+.main {
+  position: relative;
+  top: 140px;
+  padding: 20px;
+} 
+
+
+
+.featured-posts .featured-content{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+
+
+.featured-posts .featured-content .featured-post .featured-post-content{
+  position: absolute;
+  top: 25%;
+}
+
+.latest-post .latest-post-content p{
+  padding-bottom: 10px;
+}
+
+  
+.latest-post .latest-post-content .latest-date{
+  display: none;
+}
+
+footer{
+  position: relative;
+  top: 140px;
+}
