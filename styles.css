@@ -116,7 +116,7 @@ header .nav-link a{
 *****************************************************************************************
 *****************************************************************************************
 *****************************************************************************************/
-.banner{
+ .banner-background{
   position: absolute;
   z-index: -1;
   left: 0;
@@ -125,20 +125,17 @@ header .nav-link a{
   height: 600px;
   overflow: hidden;
 }
- .banner-container {
-  position: relative;
-}
 
- .banner-container img {
+ .banner-background img {
   width: 100%;
   height: auto;
-  filter: grayscale(50%), brightness(0.7);
+  filter: grayscale(50%), brightness(0.5);
 }
 
   
 .banner-content {
     position: absolute;
-    top: 15%;
+    top: 20%;
     left: 30%;
     width: 800px; /* Assign a value */
     height: 300px; /* Assign a value */
@@ -193,7 +190,7 @@ header .nav-link a{
 
 /*****************************************BANNER HOVER******************************************/
 
-.banner .banner-content .social-link a:hover{
+.banner-content .social-link a:hover{
     background-color: rgb(243, 243, 244);
     color: rgb(20, 17, 15);
     transform: scale(1.08);
@@ -207,7 +204,7 @@ header .nav-link a{
     transition: all .3s ease;
 }
 
-.banner-container .banner-logo a:hover {
+.banner-content .banner-logo a:hover{
   opacity: 0.8;
   transition: all .5s ease;
 }
@@ -780,6 +777,14 @@ footer .footer-logo a:hover{
     height: auto;
     opacity: 0.7;
   }
+
+  .banner-content {
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    width: 200px; /* Assign a value */
+    height: 100px; /* Assign a value */
+}
 
  
 
