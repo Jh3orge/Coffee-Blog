@@ -374,6 +374,13 @@ header .nav-link a{
 
 .featured-posts{
   text-align: center;
+
+  opacity: 0;
+  transition: all .7s ease-in-out;
+}
+
+.featured-posts.visible{
+  opacity: 1;
 }
 
 .featured-posts h2{
@@ -490,6 +497,14 @@ header .nav-link a{
 .latest-posts{
   text-align: center;
   margin-top: 100px;
+
+  opacity: 0;
+  transition: all .7s ease-in-out;
+}
+
+.latest-posts.visible {
+  opacity: 1;
+  transition: all .7s ease-in;
 }
 
 .latest-posts h2{
@@ -831,6 +846,6 @@ footer .footer-logo a:hover{
 
 footer{
   position: relative;
-  top: 140px;
+  top: 450px;
 }
 }
