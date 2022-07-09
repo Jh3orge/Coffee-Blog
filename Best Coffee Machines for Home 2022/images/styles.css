@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/**************************** GLOBAL CASES *************************************/
+ body {
+     background-color: #fff;
+     font-family: "IBM Plex Sans", Arial, Helvetica;
+ }
+
+
+
+ .container {
+   max-width: 1300px;
+   height: auto;
+   margin: auto;
+ }
+
+ a {
+     color: #afafaf;
+     text-decoration: none;
+     text-transform: uppercase;
+ }
+
+
+
+
+
+
+
+
+/***************************************** HEADER ***************************************
+*****************************************************************************************
+*****************************************************************************************
+*****************************************************************************************/
+
+
+header {
+    background-color: rgba(20, 17, 15, 0.7);
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.navbar-logo{
+  display: none;
+}
+
+
+
+header .nav-items {
+    text-align: center;
+    margin: auto;
+    list-style-type: none;
+}
+
+
+
+header .nav-link {
+    padding: 0px 20px;
+    display: inline-block; 
+}
+
+header .nav-link a{
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(243, 243, 244);
+  letter-spacing: 0.1rem;
+}
+
+.navbar .toggle {
+  color: rgb(243, 243, 244);
+  background: none;
+  border: none;
+  font-size: 25px;
+  float: right;
+  line-height: 100px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
